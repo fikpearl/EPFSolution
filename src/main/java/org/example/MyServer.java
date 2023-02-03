@@ -6,10 +6,12 @@ import io.javalin.http.staticfiles.Location;
 
 public class MyServer {
 
-    private static final String PAGES_PATH = "/public";
+    private static final String PAGES_PATH = "/pagepath";
+
+    private final Javalin server1;
 
     public MyServer() {
-        Javalin server1 = Javalin.create(config -> config.addStaticFiles(PAGES_PATH, Location.CLASSPATH));
+        server1 = Javalin.create(config -> config.addStaticFiles(PAGES_PATH, Location.CLASSPATH));
     }
 
     public static void main(String[] args) {
@@ -21,13 +23,17 @@ public class MyServer {
     }
 
     private void start(int port) {
+        server1.start(port);
+
     }
 
     private void stop(){
+        server1.stop();
 
     }
 
-    private void port(){
+    public int port(){
+        return server1.port();
 
     }
 }
