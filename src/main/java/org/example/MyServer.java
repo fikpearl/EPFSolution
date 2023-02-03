@@ -6,7 +6,7 @@ import io.javalin.http.staticfiles.Location;
 
 public class MyServer {
 
-    private static final String PAGES_PATH = "/pagepath";
+    private static final String PAGES_PATH = "/path";
 
     private final Javalin server1;
 
@@ -15,25 +15,21 @@ public class MyServer {
     }
 
     public static void main(String[] args) {
-
         MyServer server = new MyServer();
-        server.start(5000);
+        server.start();
 
         System.out.println("Hello world!");
     }
 
-    private void start(int port) {
-        server1.start(port);
-
+    private void start() {
+        server1.start(5000);
     }
 
     private void stop(){
         server1.stop();
-
     }
 
     public int port(){
         return server1.port();
-
     }
 }
