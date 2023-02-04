@@ -3,14 +3,21 @@
     <head>
         <style>
             body{
-                background-color: grey;
-                color: azure;
+                box-sizing: border-box;
+                margin: 1em;
+                font-family: "Pangolin", sans-serif;
+                background-color:azure;
+                color: dimgray;
+                width: 90%;
+                padding: 1em;
+                display: inline-block;
             }
 
             .wrapper{
-                width:400px;
-                max-width:90%;
-                margin:0 auto;
+                padding: 20px;
+                width: 33%;
+                border-radius: 10px;
+                background-color: lightblue;
             }
 
             .wrapper label{
@@ -20,8 +27,19 @@
             }
 
             .wrapper label input{
-                font-size: 18px;
+                font-size: 1;
                 padding: 0.5em;
+            }
+
+            .wrapper input[type="Submit"]{
+                width: 100%;
+                background-color: blue;
+                color: white;
+                padding: 4px;
+                margin: 2px;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
             }
 
         </style>
@@ -44,16 +62,20 @@
 
         <form class="form">
 
+
+        <h1>First Name</h1>
         <label id="firstNameField">
-            <input type="text" name="firstNameField" placeholder="First Name" required />
+            <input type="text" name="firstNameField"  required />
         </label>
-
+         
+        <h1>Last Name</h1>
         <label id="LastNameField">
-            <input type="text" name="LastNameField" placeholder="Last Name" required />
+            <input type="text" name="LastNameField"  required />
         </label>
 
+        <h1>Date Of Birth</h1>
         <label id="DateOfBirthField">
-            <input type="text" name="DateOfBirthField" placeholder="Date Of Birth" required />
+            <input type="date" name="DateOfBirthField" required />
         </label>
 
         <input type="Submit" value="Submit" name="Submit"/>
@@ -61,14 +83,6 @@
 
     </form>
 </div>
-
-    
-    
-
-    
-
-    
-
 
     
 </body>
