@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+
+        </style>
+    </head>
 
 <head>
     <title>Online Customer Servcie</title>
@@ -11,20 +16,33 @@
 <body>
   
     <br />
-    <div id="app">Online Banking Customer Service</div>
+    <div id="app">Welcome To Our Online Banking Customer Service</div>
     <h1>Enter Customer Details</h1>
 
-    <h1>First Name</h1>
-    <input>
-    <button> Submit </button>
+    <div class="wrapper">
+        
+        <form class="form">
 
-    <h1>Last Name</h1>
-    <input>
-    <button> Submit </button>
+        <label id="firstNameField">
+            <input type="text" name="firstNameField" placeholder="First Name" required />
+        </label>
 
-    <h1>Date Of Birth</h1>
-    <input>
-    <button> Submit</button>
+        <label id="LastNameField">
+            <input type="text" name="LastNameField" placeholder="Last Name" required />
+        </label>
+
+        <label id="DateOfBirthField">
+            <input type="text" name="DateOfBirthField" placeholder="Date Of Birth" required />
+        </label>
+
+        <input type="Submit" value="Submit" name="Submit"/>
+
+
+    </form>
+</div>
+
+    
+    
 
     
 
