@@ -14,7 +14,7 @@
             }
 
             .wrapper{
-                padding: 20px;
+                padding: 30px;
                 width: 33%;
                 border-radius: 10px;
                 background-color: lightblue;
@@ -26,16 +26,16 @@
                 margin: 0.5em;
             }
 
-            .wrapper label input{
+            .wrapper button{
                 font-size: 1;
                 padding: 0.5em;
             }
 
-            .wrapper button[type="Submit"]{
+            .wrapper button[type="button"]{
                 width: 100%;
                 background-color: blue;
                 color: white;
-                padding: 4px;
+                padding: 0.5em;
                 margin: 2px;
                 border: none;
                 border-radius: 2px;
@@ -46,7 +46,7 @@
     </head>
 
 <head>
-    <title>Online Customer Servcie</title>
+    <title>Online Customer Servcie Menu</title>
     <link
         href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAOjv4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEBEAAAAAEBAAABAQAAAQEREREBAAABEREREREAAAARAREBEAAAAAEREREAAAAAABAAEAAAAAAAEAAQAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAPyfAADr6wAA6AsAAOADAADyJwAA+A8AAP3fAAD93wAA++8AAP//AAD//wAA"
         rel="icon" type="image/x-icon" />
@@ -58,32 +58,23 @@
   
     <br />
     <div id="app">Welcome To Our Online Banking Customer Service</div>
-    <h1>Enter Customer Details</h1>
+    <h1>What Would You Like To Do?</h1>
 
     <div class="wrapper">
 
-        <form class="form">
+        <list class="list">
 
 
-        <h1>First Name</h1>
-        <label id="firstNameField">
-            <input type="text" name="firstNameField"  value="Pearl" required />
-        </label>
+        <button type="button">Load Financial Records</button>
+        
          
-        <h1>Last Name</h1>
-        <label id="LastNameField">
-            <input type="text" name="LastNameField"  value="Gqibitole" required />
-        </label>
-
-        <h1>Date Of Birth</h1>
-        <label id="DateOfBirthField">
-            <input type="numbers" name="DateOfBirthField" value="06/02/2023" required />
-        </label>
-
-        <button type="Submit" value="Submit" name="Submit">Submit</button>
+        <button type="button">Create Bank Account</button>        
 
 
-    </form>
+        <button type="button">Load Transactions History</button>
+       
+
+        </list>
 </div>
 
 <script src="js/app.js" defer></script>	
