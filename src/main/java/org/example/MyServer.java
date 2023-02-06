@@ -3,15 +3,11 @@ package org.example;
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 
-import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
-import io.javalin.plugin.rendering.template.JavalinThymeleaf;
-import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
-
 
 public class MyServer {
 
     private static final String PAGES_PATH = "/path";
+
     private static final String PAGES_PATH2 = "/html";
 
     private final Javalin server1;
@@ -39,5 +35,5 @@ public class MyServer {
         return server1.port();
     }
 
-    
+
 }
