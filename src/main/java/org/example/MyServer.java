@@ -8,8 +8,6 @@ public class MyServer {
 
     private static final String PAGES_PATH = "/path";
 
-    private static final String PAGES_PATH2 = "/html";
-
     private final Javalin server1;
 
     public MyServer() {
@@ -34,6 +32,5 @@ public class MyServer {
     public int port(){
         return server1.port();
     }
-
 
 }
