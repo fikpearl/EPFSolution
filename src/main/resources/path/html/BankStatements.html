@@ -13,7 +13,7 @@
                 display: inline-block;
             }
 
-            .wrapper{
+            .wrapper table{
                 padding: 30px;
                 width: 33%;
                 border-radius: 10px;
@@ -25,8 +25,8 @@
                 display: block;
                 margin: 0.5em;
             }
+   
 
-            
         </style>
     </head>
 
@@ -36,22 +36,19 @@
 </head>
 
 <body>
+
+  
     <br />
     <div id="app">Welcome To Our Online Banking Customer Service</div>
-    <h1>Transactions History 
-        (scroll down to view the graph)
-    </h1>
-  
+    <h1>Bank Statement For The Last 12 Months</h1>
+
     <div class="wrapper">
         <table>
           <thead>
-              <tr>
-                  <h2>Transactions</h2>
-              </tr>
             <tr>
               <th>Month</th>
-              <th>Money In</th>
-              <th>Money Out</th>
+              <th>Income</th>
+              <th>Expenses</th>
               
             </tr>
           </thead>
@@ -118,66 +115,11 @@
                 <td>R30,613.00</td>
                 <td>R20,821.00</td>
               </tr>
-
-              
           </tbody>
           <tfoot>
           </tfoot>
         </table>
-        
+  
 </div>
-
-
-
 </body>
 </html>
-
-
-&nbsp;
-
-<html>
-  <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawStuff);
-
-      function drawStuff() {
-        var data = new google.visualization.arrayToDataTable([
-          ['Income And Expenses Over The Past 5 Months', 'Income', 'Expenses'],
-          ['Dec', 30000, 8.0],
-          ['Aug', 26000, 4.0],
-          ['Jun', 30000, 4.5],
-          ['Apr', 30000, 9.0],
-          ['Jan', 20000, 2.0]
-        ]);
-
-        var options = {
-          width: 800,
-          chart: {
-            title: 'Transaction History For The Last 12 Months',
-            
-          },
-          bars: 'horizontal', // Required for Material Bar Charts.
-          series: {
-            0: { axis: 'Income' }, // Bind series 0 to an axis named 'Income'.
-            1: { axis: 'Expenses' } // Bind series 1 to an axis named 'Expenses'.
-          },
-          axes: {
-            x: {
-              distance: {label: 'Income And Expenses'}, // Bottom x-axis.
-              brightness: {side: 'top', label: 'Transactions'} // Top x-axis.
-            }
-          }
-        };
-
-      var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
-      chart.draw(data, options);
-    };
-    </script>
-  </head>
-  <body>
-    <div id="dual_x_div" style="width: 900px; height: 500px;"></div>
-  </body>
-</html>
-
