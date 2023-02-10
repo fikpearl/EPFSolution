@@ -1,4 +1,24 @@
 <!DOCTYPE html>
+
+<!--Here we have the code that creates our website that has a header, body, and wrapper.
+The code also includes some CSS styles for the site.
+The first line of the HTML is which tells the browser to start reading from this point on in the document.
+
+
+The next line is which contains all of the style information for this page.
+
+There are two lines with CSS styles: one for body and one for wrapper.
+Body has box-sizing set to border-box so that it can take up as much space as possible while still fitting within its container (the browser window).
+Wrapper uses margin: 1em; to make sure there's enough space between each element inside it without having any extra padding or margins outside of it.
+Font-family is "Pangolin", sans-serif; because Pangolin font was used in Microsoft Edge when designing this website and sans serif fonts are easier to read at small sizes than other fonts like cursive or handwriting fonts would be.
+Background color is azure because blue colors look good against light backgrounds like white does against dark backgrounds like black does but they're not too bright either so they don't distract from what's being displayed on screen by making them too hard to see or
+The code is a styling snippet that sets the body of the document to have a border-box box model, with a 1em margin and font size of "1" for all text.
+It also sets the background color to azure, and the text color to dimgray.
+
+The .wrapper selector creates an element with padding of 20px on each side, 33% width, and 10px radius rounded corners.
+The .wrapper label selector creates an inline-block display for elements with a display: block property in order to create two lines of text when displayed as inline-block.
+The .wrapper button[type="button"] selector creates an element with 100% width, blue background color, white foreground color (text), 4px padding on-->
+
 <html>
     <head>
         <style>
@@ -58,7 +78,7 @@
 
     <div class="wrapper">
 
-        <form acton="data.php" method="post" id="form">
+        <form acton="list.html" method="post" id="form">
 
         <label id="firstNameField">
             <input type="text" name="firstNameField" placeholder="First Name"  required />
@@ -75,7 +95,7 @@
         </label>
 
         <a href="list.html">
-            <button type="button" id="submit_button" name="Submit">Submit</button>
+            <button type="button" onclick="verifyName()" id="submit_button" name="Submit">Submit</button>
         </a>
 
        

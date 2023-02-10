@@ -27,7 +27,48 @@
         }
 
     </style>
-	
+
+
+    <!--Here we have code that starts by getting the file input element with an id of 'excel_file'.
+The code then listens for changes to this input, and when it detects a change, it calls the function analyzeExcel.
+This function takes in two parameters: event and spreadsheet.
+The event parameter is an object that has a property called changed which contains information about what happened to the spreadsheet.
+This includes properties like name, type, value etc.
+
+The second parameter is a reference to the Excel workbook itself (the one with ID "excel_data").
+The code is a simple example of how to use the onchange event in order to save data from an input field into an Excel file.
+
+
+The code first obtains the element with id="excel_file" and then attaches an event listener for when the change event occurs.
+This will be triggered every time the user changes their input in the field with id="excel_file".
+The next line of code creates a variable called excel_data that will hold all of the information that was saved from the input field.
+It also creates a button which will trigger a function that saves this information into an Excel file.
+The code starts by checking to see if the file is an Excel spreadsheet.
+If it isn't, then a message is displayed that says "Only .xlsx or .xls file format are allowed."
+Next, the code creates a FileReader object and uses it to read in the contents of the file.
+
+
+It also sets up an event handler for when this process has completed.
+The event handler will be called when there's data available from reading in the file.
+In this case, we're just going to use that data as input into our XLSX library function so we can get some information about what kind of workbook was opened with this document.
+The next line starts by creating a Uint8Array object out of whatever data was returned from reading in the file using FileReader().
+This Uint8Array contains all 8-bit unsigned integers which correspond to bytes within a given range (in this case 0-255).
+
+Next, we create another variable called work_book which refers to an instance of XLSX library's class for working with Excel files.
+We then call its method read() on our new Uint8Array object and pass it two arguments: 1) A JSON string containing settings for how you want
+The code is used to determine if the file that was just read from is a .xlsx or .xls file.
+If it's not, then an alert will be shown to the user and they won't be able to proceed with the next steps.
+
+Next, the code reads in all of the data that was just read into memory as an array buffer.
+It then uses this data to create a new object called work_book which has all of the sheet names and their corresponding sheet data stored in it.
+This information is then saved into a JSON string so that we can use it later on in our script.
+
+The code starts with a function called getExcelData.
+This function is used to create an Excel file from the data in the HTML table.
+The code then creates a variable called excel_file, which will be set to null when it's done creating the Excel file.
+The next line of code uses document.getElementById('excel_data').innerHTML = table_output; to write out the contents of the HTML table into an XMLHttpRequest object and send it off to Microsoft Excel for processing.
+The code is a function that will generate an Excel file from the data in the sheet.-->
+
 	<title>Online Customer Service</title>
 	
 </head>
