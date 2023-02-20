@@ -70,6 +70,7 @@ The .wrapper button[type="button"] selector creates an element with 100% width, 
         
 </head>
 
+
 <body>
     
     <br />
@@ -78,24 +79,24 @@ The .wrapper button[type="button"] selector creates an element with 100% width, 
 
     <div class="wrapper">
 
-        <form acton="list.html" method="post" id="form">
+        <form action="list.html" method="post" id="form">
 
-        <label id="firstNameField">
-            <input type="text" name="firstNameField" placeholder="First Name"  required />
+        <label id="firstNameField" >
+            <input type="text" name="firstNameField" placeholder="First Name"   required />
         </label>
          
         
-        <label id="LastNameField">
+        <label id="LastNameField" >
             <input type="text" name="LastNameField" placeholder="Last Name"  required />
         </label>
 
         
-        <label id="DateOfBirthField">
-            <input type="numbers" name="DateOfBirthField" placeholder="Date Of Birth"  required />
+        <label id="DateOfBirthField" > 
+            <input type="date" name="DateOfBirthField"  required />
         </label>
 
         <a href="list.html">
-            <button type="button" onclick="verifyName()" id="submit_button" name="Submit">Submit</button>
+            <button type="button" onclick="ourformdata()" id="submit_button" name="Submit">Submit</button>
         </a>
 
        
@@ -103,8 +104,7 @@ The .wrapper button[type="button"] selector creates an element with 100% width, 
 </div>
 
 
-<script type="text/javascript" src="js/app.js"></script>
-
+<script type="text/javascript" src="/src/main/resources/path/js/app.js" ></script>
 
 </body>
 </html>
